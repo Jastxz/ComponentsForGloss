@@ -14,8 +14,9 @@ extra-doc-files: CHANGELOG.md
 
 source-repository head
 
---type:         git
---location:     https://github.com/benl23x5/gloss
+type:         git
+location:     https://github.com/Jastxz/ComponentsForGloss
+
 common warnings
   ghc-options: -Wall
 
