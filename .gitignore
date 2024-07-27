@@ -1,0 +1,8 @@
+# Ignorar directorios de construcción y dependencias
+/build
+/dist-newstyle
+/Precalculados
+
+# Ignorar archivos temporales
+*.log
+*.tmp

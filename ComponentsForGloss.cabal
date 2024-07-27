@@ -1,0 +1,58 @@
+cabal-version:   3.0
+name:            ComponentsForGloss
+version:         1.0.0.0
+synopsis:
+  A library for make a bit easier the use of Gloss with User Interface purposes.
+
+license:         MIT
+license-file:    LICENSE
+author:          Jastxz
+maintainer:      javicraft14@gmail.com
+category:        Graphics
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+source-repository head
+
+--type:         git
+--location:     https://github.com/benl23x5/gloss
+common warnings
+  ghc-options: -Wall
+
+library
+  import:           warnings
+  exposed-modules:
+    AlmacenElementos
+    DatosElementosPreconstruidos
+    PruebasDibujos
+    PruebasEntrada
+
+  -- Modules included in this library but not exported.
+  other-modules:
+    Tipos.TipoBarraNavegacion
+    Tipos.TipoBase
+    Tipos.TipoElemento
+    Tipos.TipoEntrada
+    Tipos.TipoEtiqueta
+    Tipos.TipoForma
+    Tipos.TipoLista
+    Tipos.TipoParrafo
+    Tipos.TipoPosicion
+    Tipos.TipoSaltoDeLinea
+    Tipos.TipoTitulo
+    Utilidades.Colores
+    Utilidades.Constantes
+    Utilidades.Utiles
+
+  -- LANGUAGE extensions used by modules in this package.
+  -- other-extensions:
+  -- Other library packages from which modules are imported.
+  build-depends:
+    , base   ^>=4.19.1.0
+    , gloss  ^>=1.13.2.2
+
+  -- Directories containing source files.
+  hs-source-dirs:   components
+
+  -- Base language which the package is written in.
+  default-language: Haskell2010
