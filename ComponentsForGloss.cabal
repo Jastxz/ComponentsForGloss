@@ -1,10 +1,11 @@
 cabal-version:   3.0
 name:            ComponentsForGloss
 version:         1.0.0.0
-Description:
-        ComponentsForGloss is a small package that allows you to create some simple GUIs
-        for your application. You will be able to create Buttons, Inputs or Text fields for example. 
-        It takes as base the original Gloss library obviously.
+description:
+  ComponentsForGloss is a small package that allows you to create some simple GUIs
+  for your application. You will be able to create Buttons, Inputs or Text fields for example. 
+  It takes as base the original Gloss library obviously.
+
 synopsis:
   A library for make a bit easier the use of Gloss with User Interface purposes.
 
@@ -17,8 +18,8 @@ build-type:      Simple
 extra-doc-files: CHANGELOG.md
 
 source-repository head
-  type:         git
-  location:     https://github.com/Jastxz/ComponentsForGloss
+  type:     git
+  location: https://github.com/Jastxz/ComponentsForGloss
 
 common warnings
   ghc-options: -Wall
@@ -30,6 +31,7 @@ library
     DatosElementosPreconstruidos
     PruebasDibujos
     PruebasEntrada
+    Tipos.TipoPosicion
 
   -- Modules included in this library but not exported.
   other-modules:
